@@ -24,6 +24,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Install Jest globally
+        run: npm install -g jest
+
       - name: Build TypeScript projects
         run: npm run build --workspaces
 
