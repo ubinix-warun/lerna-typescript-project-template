@@ -1,0 +1,20 @@
+site:
+  title: "My Project Documentation"
+  start_page: "helloworld::index.adoc"
+
+content:
+  sources:
+    - url: .
+      branches: HEAD
+      start_path: documentation/modules/ROOT/pages
+
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default.git
+    snapshot: true
+  supplemental_files: []
+
+asciidoc:
+  attributes:
+    project-name: My Project
+    project-version: 1.0.0

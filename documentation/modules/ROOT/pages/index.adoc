@@ -1,0 +1,31 @@
+= HelloWorld Library Documentation
+
+== Introduction
+
+The HelloWorld library is a simple TypeScript library that provides a function to return a "Hello, World!" message.
+
+== Installation
+
+To install the HelloWorld library, run the following command:
+
+```
+npm install helloworld
+```
+
+== Usage
+
+To use the HelloWorld library, import the `helloWorld` function and call it:
+
+```typescript
+import { helloWorld } from 'helloworld';
+
+console.log(helloWorld());
+```
+
+== API
+
+=== helloWorld
+
+The `helloWorld` function returns a "Hello, World!" message.
+
+* **Returns:** `string` - The "Hello, World!" message.
