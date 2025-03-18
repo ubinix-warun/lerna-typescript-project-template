@@ -14,5 +14,11 @@
     "typescript": "^4.0.0",
     "jest": "^26.0.0",
     "@types/jest": "^26.0.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testEnvironment": "node"
   }
 }
