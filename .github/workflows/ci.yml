@@ -19,7 +19,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '14'
+          node-version: '22'
 
       - name: Install dependencies
         run: npm install
@@ -33,5 +33,14 @@ jobs:
       - name: Run unit tests
         run: npm test --workspaces
 
-      - name: Generate documentation
-        run: antora antora-playbook.yml
+      # - name: Install Antora
+      #   run: npm install -g @antora/cli @antora/site-generator-default
+
+      # - name: Generate documentation
+      #   run: antora antora-playbook.yml
+
+      # - name: Publish documentation to GitHub Pages
+      #   uses: peaceiris/actions-gh-pages@v3
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     publish_dir: ./public

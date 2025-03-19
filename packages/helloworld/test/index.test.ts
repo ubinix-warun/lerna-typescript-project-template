@@ -1,4 +1,4 @@
-import { helloWorld } from '../src/index';
+const { helloWorld } = require('../src/index');
 
 describe('helloWorld', () => {
   it('should return "Hello, World!"', () => {
