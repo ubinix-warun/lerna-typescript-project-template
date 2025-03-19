@@ -33,14 +33,14 @@ jobs:
       - name: Run unit tests
         run: npm test --workspaces
 
-      - name: Install Antora
-        run: npm install -g @antora/cli @antora/site-generator-default
+      # - name: Install Antora
+      #   run: npm install -g @antora/cli @antora/site-generator-default
 
-      - name: Generate documentation
-        run: antora antora-playbook.yml
+      # - name: Generate documentation
+      #   run: antora antora-playbook.yml
 
-      - name: Publish documentation to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+      # - name: Publish documentation to GitHub Pages
+      #   uses: peaceiris/actions-gh-pages@v3
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     publish_dir: ./public
