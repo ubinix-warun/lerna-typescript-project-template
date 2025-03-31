@@ -10,7 +10,7 @@ module.exports = {
   testEnvironment: "node",
   moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
   collectCoverage: true,
-  coverageReporters: ["lcov", "text", "clover"],
+  coverageReporters: ["lcov", "text", "clover", "html"],
   coverageThreshold: {
     global: {
       branches: 80,
